@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Social Media</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+
+<h1>Mini Social Media</h1>
+
+<div id="auth">
+<h2>Register</h2>
+<input type="text" id="regUsername" placeholder="Username">
+<input type="email" id="regEmail" placeholder="Email">
+<input type="password" id="regPassword" placeholder="Password">
+<button onclick="registerUser()">Register</button>
+
+<h2>Login</h2>
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+<button onclick="loginUser()">Login</button>
+</div>
+
+<div id="postSection" style="display:none;">
+<h2>Create Post</h2>
+<input type="text" id="postInput" placeholder="What's on your mind?">
+<button onclick="createPost()">Post</button>
+
+<h2>Posts</h2>
+<div id="postsList"></div>
+</div>
+
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
